@@ -15,7 +15,7 @@ LOGIN INFO:
 
 main.py (frontend)
 
-javier.quinones3@upr.edu
+jean@upr.edu
 
 pass1234
 
