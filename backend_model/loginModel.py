@@ -1,9 +1,9 @@
 from flask import session
 
 thisDict = {
-    "email": "javier@gmail.com",
+    "email": "nebula@gmail.com",
     "password": "pass1234",
-    "user": "Javier"
+    "user": "Nebula"
 }
 
 
