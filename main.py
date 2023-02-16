@@ -93,7 +93,7 @@ def shop():
     session['total'] = 150.00
 
     # Redirect to shop page with the variables used
-    return render_template("shop-4column.html", products=products, amount=amount, total=total, brands=brands,
+    return render_template("shop.html", products=products, amount=amount, total=total, brands=brands,
                            mount=mount, focal_distance=focal_distance, aperture=aperture, model=model)
 
 

@@ -30,5 +30,5 @@ def getApertureModel():
     return Aperture
 
 def getTipeModel():
-    Model = ['Reflector', 'Refractor']
+    Model = ['Reflector', 'Refractor', 'catadioptric']
     return Model
