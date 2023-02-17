@@ -3,9 +3,9 @@ from flask import session
 # This is a very basic dictionary with information for logging in
 # Simulating our database
 thisDict = {
-    "email": ['jean@upr.edu', 'user@gmail.com'],
-    "password": ['pass1234', '1234'],
-    "user": ['Jean', 'User']
+    "email": ['jean@upr.edu', 'user@gmail.com', 'nebula@gmail.com'],
+    "password": ['pass1234', '1234', 'pass1234'],
+    "user": ['Jean', 'User', 'Nebula']
 }
 
 
