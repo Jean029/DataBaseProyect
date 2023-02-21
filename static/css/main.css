@@ -21,6 +21,7 @@
   --red: #ff3838;
   --gray: #777777;
   --text: #555555;
+  --footer-text: #ffffff;
   --blue: #1494a9;
   --white: #ffffff;
   --header2: red;
@@ -47,6 +48,7 @@
   --primary-tshadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
   --black: #000000;
   --banner-background: url("../images/main-banner.jpg");
+  --footer-background: url("../images/space.jpg");
 }
 
 * {
@@ -5972,6 +5974,8 @@ tbody tr td:last-child {
 ======================================*/
 .footer-part {
   padding-top: 95px;
+  background: var(--gray) var(--footer-background);
+  color: var(--footer-text)
 }
 
 .footer-widget {
@@ -6077,7 +6081,7 @@ tbody tr td:last-child {
 }
 
 .footer-links ul li a {
-  color: var(--text);
+  color: var(--footer-text);
   text-transform: capitalize;
   transition: all linear .3s;
   -webkit-transition: all linear .3s;
