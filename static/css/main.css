@@ -21,6 +21,7 @@
   --red: #ff3838;
   --gray: #777777;
   --text: #555555;
+  --footer-text: #ffffff;
   --blue: #1494a9;
   --white: #ffffff;
   --header2: red;
@@ -45,6 +46,9 @@
   --instagram: #F77737;
   --primary-bshadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
   --primary-tshadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  --black: #000000;
+  --banner-background: url("../images/main-banner.jpg");
+  --footer-background: url("../images/space.jpg");
 }
 
 * {
@@ -5970,6 +5974,8 @@ tbody tr td:last-child {
 ======================================*/
 .footer-part {
   padding-top: 95px;
+  background: var(--gray) var(--footer-background);
+  color: var(--footer-text)
 }
 
 .footer-widget {
@@ -6075,7 +6081,7 @@ tbody tr td:last-child {
 }
 
 .footer-links ul li a {
-  color: var(--text);
+  color: var(--footer-text);
   text-transform: capitalize;
   transition: all linear .3s;
   -webkit-transition: all linear .3s;
@@ -6735,6 +6741,7 @@ tbody tr td:last-child {
   text-align: center;
   position: relative;
   z-index: 1;
+  background: var(--black) var(--banner-background)
 }
 
 .single-banner::before {
@@ -6745,7 +6752,7 @@ tbody tr td:last-child {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: transparent
+  background: var(--black) var(--banner-background)
 }
 
 .single-banner h2 {

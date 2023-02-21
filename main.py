@@ -17,7 +17,7 @@ app.secret_key = 'akeythatissecret'
 @app.route("/<message>")
 def enterpage(message):
     # This is the very page you enter when booting up Flask. You will be redirected to the login page.
-    return render_template('login (2).html', message=message)
+    return render_template('login.html', message=message)
 
 
 @app.route("/clear")
@@ -88,9 +88,9 @@ def shop():
     session['amount'] = 3
 
     # Set the cart's total amount for the page
-    total = 150.00
+    total = 3871.00
     # And set the total for the entire site to access
-    session['total'] = 150.00
+    session['total'] = 3871.00
 
     # Redirect to shop page with the variables used
     return render_template("shop.html", products=products, amount=amount, total=total, brands=brands,
