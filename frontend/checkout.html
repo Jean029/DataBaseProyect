@@ -65,11 +65,11 @@
                 <div class="header-content">
                     <div class="header-media-group">
                        <button class="header-user"><img src="static/images/user.png" alt="user"></button>
-                        <a href="index.html"><img src="static/images/logo.png" alt="logo"></a>
+                        <a href="{{url_for('shop')}}"><img src="static/images/logo.png" alt="logo"></a>
                         <button class="header-src"><i class="fas fa-search"></i></button>
                     </div>
 
-                    <a href="index.html" class="header-logo">
+                    <a href="{{url_for('shop')}}" class="header-logo">
                         <img src="static/images/logo.png" alt="logo">
                     </a>
 
@@ -144,7 +144,7 @@
                                         {% if session['cart'] %}
                                          {% for key, item in session['cart'].items() %}
                                         <tr>
-                                                <td class="table-image"><img src="static/images/product-images/{{item['image']}}" alt="product"></td>
+                                                <td class="table-image"><img src="{{item['image']}}" alt="product"></td>
                                                 <td class="table-name"><h6>{{item['name']}}</h6></td>
                                                 <td class="table-price"><h6>${{item['price']}}0</h6></td>
                                                 <td class="table-brand"><h6>{{item['quantity']}}</h6></td>

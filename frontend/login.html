@@ -44,19 +44,6 @@
         <!-- CUSTOM -->
         <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
         <link rel="stylesheet" href="{{url_for('static', filename='css/user-auth.css')}}">
-
-        <style>
-            body {
-                background: rgb(2,31,75);
-                background: linear-gradient(0deg, rgba(2,31,75,1) 0%, rgba(1,2,5,1) 100%);
-            }
-            .SetTextColor{
-                color: #3a3468;
-            }
-            .SetBackgroundColor{
-                background: #3a3468
-            }
-        </style>
         <!--=====================================
                     CSS LINK PART END
         =======================================-->
@@ -94,7 +81,7 @@
                                     </div>
                                     <div class="form-button">
                                         <button type="submit" class="SetBackgroundColor">login</button>
-                                        <p>Forgot your password? <a href="reset-password.html" class="SetTextColor"> reset here</a></p>
+                                        <p>Forgot your password? <a href="{{url_for('password')}}" class="SetTextColor"> reset here</a></p>
                                     </div>
                                 </form>
                             </div>
