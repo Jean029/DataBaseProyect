@@ -5627,7 +5627,8 @@ tbody tr td:last-child {
 }
 
 .view-add-group {
-  margin: 45px 0px 15px;
+    margin-top: 2%;
+    margin-bottom: none;
 }
 
 .view-add-group .product-add,
