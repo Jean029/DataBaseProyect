@@ -28,7 +28,7 @@
                     CSS LINK PART START
         =======================================-->
         <!-- FAVICON -->
-        <link rel="icon" href="{{url_for('static', filename='images/favicon.png')}}">
+        <link rel="icon" href="{{url_for('static', filename='images/logo.png')}}">
 
         <!-- FONTS -->
          <link rel="stylesheet" href="{{url_for('static', filename='fonts/flaticon/flaticon.css')}}">
@@ -65,11 +65,11 @@
                 <div class="header-content">
                     <div class="header-media-group">
                         <button class="header-user"><img src="static/images/user.png" alt="user"></button>
-                        <a href="index.html"><img src="static/images/logo.png" alt="logo"></a>
+                        <a href="#"><img src="static/images/logo.png" alt="logo"></a>
                         <button class="header-src"><i class="fas fa-search"></i></button>
                     </div>
 
-                    <a href="index.html" class="header-logo">
+                    <a href="#" class="header-logo">
                         <img src="static/images/logo.png" alt="logo">
                     </a>
 <!--                    <a href="{{url_for('profile')}}" class="header-widget" title="My Account">-->
@@ -134,7 +134,23 @@
         =======================================-->
 
 
+        <!--=====================================
+                    BANNER PART START
+        =======================================-->
+        <section class="inner-section single-banner" style="">
+            <div class="container">
+                <h2>Products</h2>
+            </div>
 
+            <div style='padding: 0 40%' class="view-add-group">
+                   <form action="{{url_for('addproduct')}}">
+                       <button style="" class="product-add">Add product</button>
+                   </form>
+            </div>
+        </section>
+        <!--=====================================
+                    BANNER PART END
+        =======================================-->
 
 
 
@@ -146,19 +162,6 @@
                 <div class="row content-reverse">
                     <div style='text-align: center'>
 
-                        <br><br>
-                        <h2>Products</h2>
-
-                        <div style='padding: 0 40%' class="view-add-group">
-                       <form action="{{url_for('addproduct')}}">
-                           <button style="" class="product-add">Add product</button>
-                       </form>
-                        </div>
-
-                        <br>
-
-                    </div>
-
 
                         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4">
                             {% for product in products %}
@@ -166,8 +169,8 @@
                                 <div class="product-card">
                                     <div class="product-media">
 
-                                        <a class="product-image" href="static/images/product-images/{{product[7]}}">
-                                            <img src="static/images/product-images/{{product[7]}}" alt="product">
+                                        <a class="product-image" href="static/images/product-images/{{product[8]}}">
+                                            <img src="static/images/product-images/{{product[8]}}" alt="product">
                                         </a>
                                         <div class="product-widget">
                                             <a title="Product View" href="{{url_for('product', prod=product[0])}}" class="fas fa-eye"></a>
@@ -181,13 +184,13 @@
                                             <a>{{product[2]}}</a>
                                         </h6>
                                         <h6 class="product-price">
-                                            <span>${{product[10]}}</span>
+                                            <span>${{product[11]}}</span>
                                         </h6>
                                         <h6 class="product-name">
-                                            <a>{{product[8]}} in stock</a>
+                                            <a>{{product[9]}} in stock</a>
                                         </h6>
                                         <h6 class="product-name">
-                                            <a>Status: {{product[9]}}</a>
+                                            <a>Status: {{product[10]}}</a>
                                         </h6>
 
                                         <div class="product-action">
@@ -274,7 +277,7 @@
                     <div class="col-sm-6 col-xl-3">
                         <div class="footer-widget">
                             <a class="footer-logo" href="#">
-                                <img src="images/logo.png" alt="logo">
+                                <img src="static/images/logo.png" alt="logo">
                             </a>
                             <p class="footer-desc">This e-commerce template has been created for the sole purpose of aiding the students for the Databases course</p>
 

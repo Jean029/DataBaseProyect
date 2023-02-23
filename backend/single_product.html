@@ -28,7 +28,7 @@
                     CSS LINK PART START
         =======================================-->
          <!-- FAVICON -->
-        <link rel="icon" href="{{url_for('static', filename='images/favicon.png')}}">
+        <link rel="icon" href="{{url_for('static', filename='images/logo.png')}}">
 
         <!-- FONTS -->
          <link rel="stylesheet" href="{{url_for('static', filename='fonts/flaticon/flaticon.css')}}">
@@ -54,6 +54,8 @@
             input {
                 border: 1px solid #000;
             }
+            .header-form input{border: none}
+
 
         </style>
 
@@ -72,17 +74,14 @@
                 <div class="header-content">
                     <div class="header-media-group">
                         <button class="header-user"><img src="static/images/user.png" alt="user"></button>
-                        <a href="index.html"><img src="static/images/logo.png" alt="logo"></a>
+                        <a href="{{url_for('products')}}"><img src="static/images/logo.png" alt="logo"></a>
                         <button class="header-src"><i class="fas fa-search"></i></button>
                     </div>
 
-                    <a href="index.html" class="header-logo">
+                    <a href="{{url_for('products')}}" class="header-logo">
                         <img src="static/images/logo.png" alt="logo">
                     </a>
-<!--                    <a href="{{url_for('profile')}}" class="header-widget" title="My Account">-->
-<!--                        <img src="static/images/user.png" alt="user">-->
-<!--                        <span>My Account</span>-->
-<!--                    </a>-->
+
                     <ul class="dropdown">
                     <a class="navbar-link dropdown-arrow" href="#">My Account</a>
                                     <ul class="dropdown-position-list">
@@ -159,7 +158,7 @@
                     <div class="col-lg-6">
                         <div class="details-gallery">
                             <ul class="details-preview"> 
-                                <li><img src="../static/images/product-images/{{prod[7]}}" alt="product"></li>
+                                <li><img src="../static/images/product-images/{{prod[8]}}" alt="product"></li>
                             </ul>
 
                         </div>
@@ -228,7 +227,7 @@
                                 <button class="product-add" title="Save changes">
                                     <span>Save changes</span>
                                 </button>
-                            </form>
+                                </form>
 
                         </div>
                     </div>
@@ -251,7 +250,7 @@
                     <div class="col-sm-6 col-xl-3">
                         <div class="footer-widget">
                             <a class="footer-logo" href="#">
-                                <img src="images/logo.png" alt="logo">
+                                <img src="static/images/logo.png" alt="logo">
                             </a>
                             <p class="footer-desc">This e-commerce template has been created for the sole purpose of aiding the students for the Databases course</p>
 
