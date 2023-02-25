@@ -30,42 +30,42 @@ order2 = {"tracking_num": "92391290",
     "status": 'delivered'}
 
 productDict1 = {"1": {
-    "image": 'ruko_f11_pro.jpg',
-    "name": 'F11 Pro',
-    "brand": 'Ruko',
-    "price": 399.00,
+    "image": 'TravelScope.png',
+    "name": 'Travel Scope',
+    "brand": 'Celestron',
+    "price": 86.00,
     "quantity": 1,
-    "total_price": 399.00
+    "total_price": 86.00
 }}
 
 productDict2 = {"2": {
-    "image": 'dji_tello.jpg',
-    "name": 'Tello Drone',
-    "brand": 'DJI',
-    "price": 89.00,
+    "image": 'AstroMaster.png',
+    "name": 'Astromaster',
+    "brand": 'Celestron',
+    "price": 300.00,
     "quantity": 2,
-    "total_price": 178.00
+    "total_price": 600.00
 }}
 
 productsOrder1 = productDict1
 productsOrder1 = MagerDicts(productsOrder1, productDict2)
 
 productDict3 = {"3": {
-    "image": 'parrot_bebop_2.jpg',
-    "name": 'Bebop 2',
-    "brand": 'Parrot',
-    "price": 270.00,
+    "image": 'AdvancedVX.jpg',
+    "name": 'Advanced VX',
+    "brand": 'Celestron',
+    "price": 3699.00,
     "quantity": 2,
-    "total_price": 540.00
+    "total_price": 7398.00
 }}
 
 productDict4 = {"4": {
-    "image": 'dji_tello.jpg',
-    "name": 'Tello Drone',
-    "brand": 'DJI',
-    "price": 89.00,
+    "image": 'Skyscanner.jpg',
+    "name": 'Skyscanner 10012',
+    "brand": 'Orion',
+    "price": 130.00,
     "quantity": 1,
-    "total_price": 89.00
+    "total_price": 130.00
 }}
 
 productsOrder2 = productDict3

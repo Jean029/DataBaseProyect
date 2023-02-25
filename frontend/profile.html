@@ -28,7 +28,7 @@
                     CSS LINK PART START
         =======================================-->
          <!-- FAVICON -->
-        <link rel="icon" href="{{url_for('static', filename='images/favicon.png')}}">
+        <link rel="icon" href="{{url_for('static', filename='images/logo.png')}}">
 
         <!-- FONTS -->
          <link rel="stylesheet" href="{{url_for('static', filename='fonts/flaticon/flaticon.css')}}">
@@ -120,7 +120,7 @@
                     {% for key, item in session['cart'].items() %}
                 <li class="cart-item">
                     <div class="cart-media">
-                        <a href="#"><img src="images/product/05.jpg" alt="product"></a>
+                        <a href="#"><img src="{{item['image']}}" alt="product"></a>
                         <form action="{{url_for('delete', id=key)}}">
                         <button class="cart-delete"><i class="far fa-trash-alt"></i></button>
                         </form>
@@ -418,7 +418,7 @@
                     <div class="col-sm-6 col-xl-3">
                         <div class="footer-widget">
                             <a class="footer-logo" href="#">
-                                <img src="images/logo.png" alt="logo">
+                                <img src="static/images/logo.png" alt="logo">
                             </a>
                             <p class="footer-desc">This e-commerce template has been created for the sole purpose of aiding the students for the Databases course</p>
 

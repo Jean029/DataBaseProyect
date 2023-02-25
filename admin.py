@@ -55,7 +55,7 @@ def editinfo():
 def password():
     # make password changes
     # optional for students to implement or not
-    return render_template("change-password.html")
+    return render_template("change_password.html")
 
 
 @app.route("/products")
