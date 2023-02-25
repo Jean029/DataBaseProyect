@@ -73,11 +73,11 @@
                 <div class="header-content">
                     <div class="header-media-group">
                         <button class="header-user"><img src="static/images/user.png" alt="user"></button>
-                        <a href="index.html"><img src="static/images/logo.png" alt="logo"></a>
+                        <a href="{{url_for('products')}}"><img src="static/images/logo.png" alt="logo"></a>
                         <button class="header-src"><i class="fas fa-search"></i></button>
                     </div>
 
-                    <a href="index.html" class="header-logo">
+                    <a href="{{url_for('products')}}" class="header-logo">
                         <img src="static/images/logo.png" alt="logo">
                     </a>
                     <ul class="dropdown">
@@ -186,7 +186,7 @@
 
                                 </tbody>
                             </table>
-                                <div class="checkout-charge">
+                                <div class="checkout-charge" style="margin-top: 20px;">
                                     <ul>
                                         <li>
                                             <span>Total</span>
