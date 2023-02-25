@@ -114,11 +114,11 @@ def editinfo():
     return redirect("/profile")
 
 
-@app.route("/password", methods=["POST"])
+@app.route("/password")
 def password():
     # make password changes
     # optional portion for students to implement or not
-    return render_template("change-password.html")
+    return render_template("change_password.html")
 
 
 @app.route("/orders")
