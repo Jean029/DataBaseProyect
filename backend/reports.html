@@ -28,7 +28,7 @@
                     CSS LINK PART START
         =======================================-->
         <!-- FAVICON -->
-        <link rel="icon" href="{{url_for('static', filename='images/favicon.png')}}">
+        <link rel="icon" href="{{url_for('static', filename='images/logo.png')}}">
 
         <!-- FONTS -->
          <link rel="stylesheet" href="{{url_for('static', filename='fonts/flaticon/flaticon.css')}}">
@@ -75,11 +75,11 @@
                 <div class="header-content">
                     <div class="header-media-group">
                         <button class="header-user"><img src="static/images/user.png" alt="user"></button>
-                        <a href="index.html"><img src="static/images/logo.png" alt="logo"></a>
+                        <a href="{{url_for('products')}}"><img src="static/images/logo.png" alt="logo"></a>
                         <button class="header-src"><i class="fas fa-search"></i></button>
                     </div>
 
-                    <a href="index.html" class="header-logo">
+                    <a href="{{url_for('products')}}" class="header-logo">
                         <img src="static/images/logo.png" alt="logo">
                     </a>
 <!--                    <a href="{{url_for('profile')}}" class="header-widget" title="My Account">-->
@@ -143,11 +143,22 @@
                     NAVBAR PART END
         =======================================-->
 
+        <!--=====================================
+                    BANNER PART START
+        =======================================-->
+
+        <section class="inner-section single-banner" style="marging-top: 1em;">
+            <div class="container">
+                <h2>Reports</h2>
+            </div>
+        </section>
+        <!--=====================================
+                    BANNER PART END
+        =======================================-->
 
         <!--=====================================
                     ORDERLIST PART START
         =======================================-->
-        <br><br>
         <section class="inner-section orderlist-part">
             <div class="container">
                 <div class="row">
@@ -368,7 +379,7 @@
                     <div class="col-sm-6 col-xl-3">
                         <div class="footer-widget">
                             <a class="footer-logo" href="#">
-                                <img src="images/logo.png" alt="logo">
+                                <img src="static/images/logo.png" alt="logo">
                             </a>
                             <p class="footer-desc">This e-commerce template has been created for the sole purpose of aiding the students for the Databases course</p>
 
