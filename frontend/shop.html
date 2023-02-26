@@ -361,7 +361,7 @@
                                                 <a data-bs-toggle="modal" data-bs-target="#product-view-{{product[0]}}">{{product[1]}}</a>
                                             </h6>
                                             <h6 class="product-price">
-                                                <span>{{product[11]}}.00</span>
+                                                <span>Price: {{product[11]}}.00</span>
                                             </h6>
                                             <button class="product-add" title="Add to Cart">
                                                 <i class="fas fa-shopping-basket"></i>
@@ -373,7 +373,6 @@
                                                     <input type="hidden" id="p_id" name="p_id" value="{{product[0]}}">
                                                     <input type="hidden" id="name" name="name" value="{{product[1]}}">
                                                     <input type="hidden" id="price" name="price" value="{{product[11]}}">
-                                                    <input type="hidden" id="cost" name="cost" value="{{product[12]}}">
                                                     <input type="hidden" id="stock" name="stock" value="{{product[9]}}">
                                                     <input type="hidden" id="brand" name="brand" value="{{product[2]}}">
                                                     <input type="hidden" id="mount" name="mount" value="{{product[5]}}">
@@ -414,8 +413,7 @@
                                                                     <p>Mount: {{product[5]}}</p>
                                                                 </div>
                                                                 <h3 class="view-price">
-                                                                    <del>{{product[12]}}.00</del>
-                                                                    <span>{{product[11]}}.00</span>
+                                                                    <span>Price: {{product[11]}}.00</span>
                                                                 </h3>
                                                                 <p class="view-desc">Description</p>
                                                                 <div class="view-add-group">
